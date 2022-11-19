@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.StartAppController">
+    <children>
+        <TextField fx:id="AppStartName" layoutX="97.0" layoutY="85.0" prefHeight="31.0" prefWidth="306.0" />
+        <Label layoutX="97.0" layoutY="50.0" prefHeight="21.0" prefWidth="236.0" text="Enter application name" />
+        <Button layoutX="340.0" layoutY="130.0" mnemonicParsing="false" onAction="#SetStartApp" prefHeight="31.0" prefWidth="63.0" text="Start" />
+    </children>
+</AnchorPane>

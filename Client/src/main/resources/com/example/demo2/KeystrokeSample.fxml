@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.KeystrokeController">
+    <children>
+        <Button layoutX="26.0" layoutY="53.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="104.0" text="Hook" />
+        <Button layoutX="26.0" layoutY="134.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="104.0" text="Unhook" />
+        <Button layoutX="26.0" layoutY="217.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="104.0" text="View " />
+        <Button layoutX="26.0" layoutY="297.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="104.0" text="Delete" />
+        <ListView layoutX="193.0" layoutY="53.0" prefHeight="306.0" prefWidth="333.0" />
+    </children>
+</AnchorPane>
+

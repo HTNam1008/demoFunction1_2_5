@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+    <children>
+        <TextField fx:id="ServerID" layoutX="54.0" layoutY="33.0" onAction="#connectDisable" onKeyTyped="#connectDisable" prefHeight="13.0" prefWidth="303.0" promptText="Enter ID" text="Enter IP" />
+        <Button fx:id="connectButton" disable="true" layoutX="387.0" layoutY="33.0" mnemonicParsing="false" onAction="#setconnectButton" prefHeight="31.0" prefWidth="152.0" text="Connect">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="54.0" layoutY="106.0" mnemonicParsing="false" onAction="#moveToProcessScene" prefHeight="117.0" prefWidth="172.0" text="Process Running">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="387.0" layoutY="106.0" mnemonicParsing="false" onAction="#moveToAppScene" prefHeight="117.0" prefWidth="172.0" text="App Running">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="54.0" layoutY="236.0" mnemonicParsing="false" onAction="#moveToScreenshotScene" prefHeight="133.0" prefWidth="172.0" text="Take screenshot">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="387.0" layoutY="236.0" mnemonicParsing="false" onAction="#moveToKeyStrokeScene" prefHeight="133.0" prefWidth="172.0" text="Keystroke" textFill="#070707">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="ShutdownAccept" layoutX="254.0" layoutY="165.0" mnemonicParsing="false" onAction="#moveToShutdownScene" prefHeight="117.0" prefWidth="111.0" text="Shutdown">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="254.0" layoutY="73.0" prefHeight="21.0" prefWidth="146.0" text="Choose function" textAlignment="CENTER" textFill="#3c3939">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+      <Button fx:id="disconnectButton" disable="true" layoutX="254.0" layoutY="328.0" mnemonicParsing="false" onAction="#setDisconnectButton" prefHeight="31.0" prefWidth="111.0" text="Disconnect">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

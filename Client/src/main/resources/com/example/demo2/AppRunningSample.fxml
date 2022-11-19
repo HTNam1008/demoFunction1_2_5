@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.AppRunningPController">
+    <children>
+        <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" onAction="#moveToKillApp" prefHeight="73.0" prefWidth="110.0" text="Kill" />
+        <Button layoutX="17.0" layoutY="42.0" mnemonicParsing="false" onAction="#getListRunningApp" prefHeight="73.0" prefWidth="110.0" text="Get list" />
+        <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#moveToStartApp" prefHeight="73.0" prefWidth="110.0" text="Start" />
+        <TableView fx:id="ListAppTable" layoutX="186.0" layoutY="29.0" prefHeight="310.0" prefWidth="341.0">
+            <columns>
+                <TableColumn fx:id="nameApp" prefWidth="243.0" text="Name App" />
+                <TableColumn fx:id="pidApp" prefWidth="96.0" text="PID" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

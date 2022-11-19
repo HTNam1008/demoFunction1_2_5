@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="RIGHT" ellipsisString="" layoutY="120.0" prefHeight="17.0" prefWidth="230.0" text="SERVER" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.48">
+                     <color>
+                        <Color blue="0.00989999994635582" green="0.00989999994635582" red="0.009999999776482582" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="RIGHT" ellipsisString="" layoutX="-5.0" layoutY="155.0" prefHeight="17.0" prefWidth="230.0" text="Group 12" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="98.0" layoutX="84.0" layoutY="154.0" startX="-45.5" />
+            <Circle fill="WHITE" layoutX="49.0" layoutY="99.0" radius="13.0" stroke="BLACK">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.14473684132099152" green="0.14473684132099152" red="0.14473684132099152" />
+                     </color>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Circle>
+            <Circle fill="#ffffff00" layoutX="110.0" layoutY="154.0" radius="84.0" stroke="#fcf8f8" strokeType="INSIDE">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Circle>
+            <Label alignment="CENTER" layoutX="-4.0" layoutY="353.0" prefHeight="17.0" prefWidth="235.0" text="Copyright (c). All Rights Reserved." textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="288.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="RIGHT" ellipsisString="" layoutX="21.0" layoutY="47.0" prefHeight="52.0" prefWidth="246.0" text="SERVER" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.48">
+                     <color>
+                        <Color blue="0.00989999994635582" green="0.00989999994635582" red="0.009999999776482582" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Button fx:id="openServerButton" layoutX="92.0" layoutY="173.0" mnemonicParsing="false" onAction="#setOpenServerButton" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #263F73;" text="Open Sever" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="exitButton" layoutX="94.0" layoutY="254.0" mnemonicParsing="false" onAction="#setExitButton" prefHeight="40.0" prefWidth="101.0" style="-fx-background-color: #263F73;" text="Exit" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
